@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "5fa56d57-f5a6-45e6-b7bf-85fd642c39d4",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10298564"
+	},
+	"item": [
+		{
+			"name": "[NW] Получения всего списка",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}:{{PORT}}/v1/list/networks",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"v1",
+						"list",
+						"networks"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "172.25.143.81",
+			"type": "string"
+		},
+		{
+			"key": "PORT",
+			"value": "9999",
+			"type": "string"
+		},
+		{
+			"key": "serviceName",
+			"value": "punik",
+			"type": "string"
+		}
+	]
+}
