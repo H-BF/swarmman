@@ -32,3 +32,4 @@ stages:
 generate build:
   variables:
     CI_TMPL_HELM_RELEASE_NAMES: "swarmman"
+    
