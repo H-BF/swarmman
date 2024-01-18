@@ -4,6 +4,7 @@
   "description": "",
   "main": "./build/index.js",
   "scripts": {
+    "build": "tsc",
     "rebuild": "rimraf ./build && tsc",
     "start:dev": "rimraf ./build && tsc && copyfiles -u 1 ./src/data/* ./build && node -r dotenv/config ./build/index.js dotenv_config_path=./.env"
   },
