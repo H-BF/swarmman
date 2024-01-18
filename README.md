@@ -1,5 +1,5 @@
 ## Описание
-Проект Swarman предназначен для запуска postman сценариев с помощью библиотеки newman с последующий обработкой результатов для записи их в БД посредством CRUD сервиса api-report-crud и отображением результатов frontend-test-ui
+Проект **Swarman** предназначен для запуска [Postman](https://www.postman.com/) сценариев с помощью библиотеки [newman](https://www.npmjs.com/package/newman) с последующий обработкой результатов для записи их в БД посредством CRUD сервиса [api-reporter-crud](https://gitlab-internal.wildberries.ru/swarm/testops/api-reporter-crud) и отображением результатов [frontend-test-ui](https://gitlab-internal.wildberries.ru/swarm/frontops/frontend-test-ui)
 
 ## Требования к сценарию
 1. Сценарий пишется в инструменте Postman.
