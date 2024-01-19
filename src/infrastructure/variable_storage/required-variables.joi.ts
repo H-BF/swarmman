@@ -22,8 +22,6 @@ export const requiredVariables = joi.object({
 
     SRC_BRANCH: joi.string().required(),
 
-    DST_BRANCH: joi.string().required(),
-
     COMMIT: joi.string().required(),
 
     TAG: joi.string().required(),

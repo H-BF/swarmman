@@ -28,7 +28,6 @@ export class Runner {
             await this.reporter.writeValidateJsonSchemas(this.scenario.jsonSchemas)
     
             const summury = await NewmanRunner(this.scenario.scenario)
-            fs.writeFileSync("res2.json", JSON.stringify(summury))
             const nde = new NewmanDataExtractor(summury, this.scenario.jsonSchemas, this.subLogger)
             
             const { total, failed } = nde.getAssertionNumber()

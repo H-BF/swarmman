@@ -13,7 +13,6 @@ class VariablesStorage {
             PIPLINE_ID: process.env.PIPLINE_ID,
             JOB_ID:  process.env.JOB_ID,
             SRC_BRANCH: process.env.SRC_BRANCH,        
-            DST_BRANCH: process.env.DST_BRANCH,
             COMMIT: process.env.COMMIT,
             TAG: process.env.TAG,
         }
