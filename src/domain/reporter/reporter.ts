@@ -26,7 +26,6 @@ export class Reporter {
             pipeline: variables.PIPLINE_ID,
             job: variables.JOB_ID,
             srcBranch: variables.SRC_BRANCH,
-            dstBranch: variables.DST_BRANCH,
             commit: variables.COMMIT,
             tag: variables.TAG,
             serviceName: serviceName
