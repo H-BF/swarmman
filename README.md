@@ -45,8 +45,6 @@ sevriceName | название сервиса. *Не должно содержа
 
 `SRC_BRANCH` - ветка из которой был MR породивший запуск тестов Можно получить из предопределеной переменной GitLab CI\CD *CI_MERGE_REQUEST_SOURCE_BRANCH_NAME*
 
-`DST_BRANCH` - ветка в которую был MR породивший запуск тестов Можно получить из предопределеной переменной GitLab CI\CD *CI_MERGE_REQUEST_TARGET_BRANCH_NAME*
-
 `COMMIT` - хэш коммита Можно получить из предопределеной переменной GitLab CI\CD *CI_COMMIT_SHORT_SHA*
 
 `TAG` - таг версии тестируемого сервиса.
