@@ -7,8 +7,9 @@ RUN npm run build
 
 FROM node:18-alpine
 WORKDIR /usr/src/swarmman
-COPY --from=builder /usr/src/app/build ./src
-COPY ./src/data ./src/data
+COPY --from=builder /usr/src/app/build ./build
+COPY ./src/data ./build/data
+COPY ./README.md .
 ADD *.json .
 RUN npm ci --only=production
-CMD ["node", "./src/index.js"]
+CMD ["node", "./build/index.js"]
