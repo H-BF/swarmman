@@ -50,3 +50,35 @@ sevriceName | название сервиса. *Не должно содержа
 
 `TAG` - таг версии тестируемого сервиса.
 
+## Запуск в инфраструктуре wildberries
+
+Шаблоны для запуска swarmman тестов лежат [swarmman template](https://gitlab-internal.wildberries.ru/swarm/swarmops/devops/ci/ci-templates/-/tree/main/swarmman)
+
+1. Создать проект, который будет состоять из:
+ * папка `data` c тестовыми файлами
+ * файл .gitlab-ci.yml
+2. Запуск тестов осуществляется 
+ * перейти в Build -> Pipelines для проекта
+ * нажать Run Pipeline
+ * указать в переменной TAG тэг тестируемой версии продукта
+ * нажать Run Pipeline
+
+Пример gitlab-ci.yml
+```yml
+.template_repo: &repo
+  project: &ci_tmpl 'swarm/swarmops/devops/ci/ci-templates'
+  ref: &ci_tmpl_vers 'v1.0.0'
+  
+variables: 
+  REPORTER_HOST: //адрес по которому распологается api-report-crud
+  REPORTER_PORT: //порт, который слушает сервис api-report-crud
+  REPORTER_PROTOCOL: http
+
+include:
+  - <<: *repo
+    file: /swarmman/main.yml
+  
+stages:
+  - test
+
+```
