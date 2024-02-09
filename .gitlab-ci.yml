@@ -1,4 +1,4 @@
 include:
     - project: swarm/swarmops/devops/ci/ci-templates
-      ref: feature-swarm-387
+      ref: v1.3.0
       file: projects-ci/swarmman.yml
