@@ -1,4 +1,4 @@
 include:
     - project: swarm/swarmops/devops/ci/ci-templates
       ref: feature-swarm-387
-      file: projects-ci/frontend-test-ui-github.yml
+      file: projects-ci/swarmman.yml
