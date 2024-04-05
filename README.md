@@ -1,5 +1,5 @@
 ## Описание
-Проект **Swarman** предназначен для запуска [Postman](https://www.postman.com/) сценариев с помощью библиотеки [newman](https://www.npmjs.com/package/newman) с последующий обработкой результатов для записи их в БД посредством CRUD сервиса [api-reporter-crud](https://gitlab-internal.wildberries.ru/swarm/testops/api-reporter-crud) и отображением результатов [frontend-test-ui](https://gitlab-internal.wildberries.ru/swarm/frontops/frontend-test-ui)
+Проект **Swarman** предназначен для запуска [Postman](https://www.postman.com/) сценариев с помощью библиотеки [newman](https://www.npmjs.com/package/newman) с последующий обработкой результатов для записи их в БД посредством CRUD сервиса [api-reporter-crud](https://github.com/H-BF/api-reporter-crud) и отображением результатов [frontend-test-ui](https://github.com/H-BF/frontend-test-ui)
 
 ## Требования к сценарию
 1. Сценарий пишется в инструменте Postman.
@@ -51,8 +51,6 @@ sevriceName | название сервиса. *Не должно содержа
 `TAG` - таг версии тестируемого сервиса.
 
 ## Запуск в инфраструктуре wildberries
-
-Шаблоны для запуска swarmman тестов лежат [swarmman template](https://gitlab-internal.wildberries.ru/swarm/swarmops/devops/ci/ci-templates/-/tree/main/swarmman)
 
 1. Создать проект, который будет состоять из:
  * папка `data` c тестовыми файлами
